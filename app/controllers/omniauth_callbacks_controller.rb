@@ -11,4 +11,17 @@ class OmniauthCallbacksController < ApplicationController
       redirect_to new_user_registration_url
     end
   end
+  
+  def github
+    redirect_to new_user_registration_url
+  end
+  
+  def twitter
+    redirect_to new_user_registration_url
+  end
+  
+  def facebook
+    debugger
+    redirect_to new_user_registration_url
+  end
 end

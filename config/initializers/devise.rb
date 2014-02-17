@@ -7,6 +7,9 @@ Devise.setup do |config|
   config.secret_key = '59bad75cf30e7485c566eecfdc756e9a793e1026def0903068d7ca904e5ac058c92160ee70dc488943fc01cddc950606902d2c53af6900ba29829c78ae3e03e6'
 
   config.omniauth :google_oauth2, '1043451746827-19284if8l9q9bajbktp5dfjlhpc6974f.apps.googleusercontent.com', 'gLC5L3KGZ3h938aLdson2EaH'
+  config.omniauth :github, '6d6862ef3bbedcaff804', '9399edcb6238e27f34e72297e908a43979d225c5', :scope => 'user,public_repo'
+  config.omniauth :twitter, 'A4i23KTBT0LdLhgjCCkXQ', 'XMmileDsuOCXTdDZJyi3kVt6ukxY9cPsLM5R07LRKtA'
+  config.omniauth :facebook, '578662982210238', '30195d4ca2cb5782d22148a4eb03098c'
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
@@ -228,7 +231,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
+  # config.omniauth :github, 'APP_ID', 'APP_SECRET'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
